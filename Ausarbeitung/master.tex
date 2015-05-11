@@ -29,7 +29,7 @@
 %fleqn,								% Ausgabe von Gleichungen linksbündig
 %draft								% überlangen Zeilen in Ausgabe gekennzeichnet
 ]
-{scrartcl}
+{scrreprt}
 
 %\pagestyle{empty}		% keine Kopf und Fußzeile (k. Seitenzahl)
 %\pagestyle{headings}	% lebender Kolumnentitel  
@@ -79,8 +79,8 @@
 %% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
 %\titlehead{Titelkopf }
 %\subject{Typisierung}
-\title{Der Name Ihrer Arbeit}
-\author{Ihr Name, Christian Rasch}
+\title{Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter Berücksichtigung von Lagerdauer und thermischem Einfluss}
+\author{Sabine Klein, Christian Rasch}
 %\and{Der Name des Co-Autoren}
 %\thanks{Fußnote}			% entspr. \footnote im Fließtext
 %\date{}							% falls anderes, als das aktuelle gewünscht
@@ -92,71 +92,19 @@
 \maketitle 						% Titelei wird erzeugt
 
 %% Zusammenfassung nach Titel, vor Inhaltsverzeichnis %%%%%%%%%%%%%%%%%
-%\begin{abstract}
-% Für eine kurze Zusammenfassung des folgenden Artikels.
-% Für die Überschrift s. \documentclass[abstracton].
-%\end{abstract}
-
-%% Erzeugung von Verzeichnissen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{abstract}
+1000 Zeichen Text in Deutsch und Englisch
+\end{abstract}
+\newpage
 \tableofcontents			% Inhaltsverzeichnis
-%\listoftables				% Tabellenverzeichnis
-%\listoffigures				% Abbildungsverzeichnis
 
-
-%% Der Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\part[Erster Streich]{wenige Erläuterungen}
-\section[Überschriften]{Überschrift und das Inhaltsverzeichnis}
-Die meisten Artikel werden ab \verb#\section{}# gegliedert. Es steht jedoch grundsätzlich auch der sehr gewaltige, übergeordnete Gliederungspunkt \verb#\part{}# zur Verfügung.
-
-Durch das optionale Argument [Kurzform] in \verb#\section[Kurzform]{Überschrift}# kann für das Inhaltsverzeichnis eine alternative Formulierung der Überschrift definiert werden. Das heißt, dass bei Verwendung des Arguments der Inhalt der eckigen Klammern in das Inhaltsverzeichnis aufgenommen wird, die Überschrift im Fließtext jedoch durch den Inhalt der geschweiften Klammern gebildet wird. 
-
-Die Überschrift dieses Abschnitts ist ein Beispiel dafür: Erstellen Sie ein Beispiel!
-
-\subsection{Erstellung des Beispiels}
-Entfernen Sie das \%-Zeichen vor \verb#\tableofcontens#, speichern Sie das Dokument (Datei, Speichern unter) und compilieren Sie das Dokument (F7) zweimal. Sehen Sie sich das Beispiel an (F5). Beachten Sie die Bezeichnung im Inhaltsverzeichnis und im Fließtext.
-
-\section{weitere Gliederungspunkte}
-Die folgenden Gliederungsschritte nach \verb#\section[]{}# und \verb#\subsection[]{}# sind 
-\begin{verbatim}
-\subsubsection[]{},\paragraph[]{} und \subparagraph[]{}.
-\end{verbatim}
-
-Sie alle sind erreichbar über das Menü: Einfügen, Überschrift.
-
-\subsection{die Sternvariante}
-Durch den * wird der Gliederungspunkt weder nummeriert, noch als Kolumnentitel gesetzt und es erfolgt kein Eintrag
-ins Inhaltsverzeichnis.
-
-Ein Beispiel ist die nächste Subsection:
-
-\subsection*{das Beispiel}
-Diesen Gliederungspunkt findet man im Inhaltsverzeichnis nicht!
-An dieser Stelle möchte ich Sie auf Besonderheiten der KOMA-Scriptklasse hinweisen, die Sie im scrguide nachlesen können:
-\begin{verbatim}
-\addpart[Kurzform]{Überschrift}
-\addpart*{Überschrift}
-\addchap[Kurzform]{Überschrift}
-\addchap*{Überschrift}
-\addsec[Kurzform]{Überschrift}
-\addsec*{Überschrift}
-und
-\minisec{Überschrift}
-\end{verbatim}
-Es liefert einige interessante Optionen!\footnote{Hierin kann auch nachgelesen werden, wie individuelle Kopfzeilen mit scrpage2 erstellt werden können.}
-
-\section{persönlicher Tipp}
-Arbeiten Sie mit TeXnicCenter stets mit Projekten, speichern Sie die einzelnen Teile Ihrer Arbeit in einzelnen Dateien und binden Sie diese mit Hilfe von \verb#\input{Dateiname}# in das Hauptdokument ein.
-
-Persönlich nutze ich einen eigene Datei für jede Section. 
-
-Viel Spaß! Für Rückfragen, die diese Vorlage betreffen, stehe ich Ihnen gern in der Mailingliste von TXC zur Verfügung. Ansonsten sind die Dokumente \texttt{lshort}, \texttt{l2tabu}, die \texttt{FAQ der Newsgroup de.text.tex} und natürlich der \texttt{scrguide} immer sehr hilfreich.
-
-\section{Schnuff Schnuf}
-Liebes Schrofelchen, es freut mich, dass du dich für \LaTeX entschieden hast.
-
-%% Bibliographie unter Verwendung von dinnat %%%%%%%%%%%%%%%%%%%%%%%%%%
-%\setbibpreamble{Präambel}		% Text vor dem Verzeichnis
-%\bibliographystyle{dinat}
-%\bibliography{bibliographie}	% Sie benötigen einen *.bib-Datei
+\newpage
+\chapter{Einleitung} 
+\chapter{Planung}
+\chapter{Durchführung}
+\chapter{Auswertung}
+\chapter{Fazit}
+\chapter{exemplarische Vorschrift}
 
 \end{document}
