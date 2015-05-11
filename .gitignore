@@ -41,3 +41,12 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.log
+*.aux
+*.toc
+*.pdf
+*.blg
+Ausarbeitung/master.dvi
+*.bbl
+~$ToDo.docx
+*.tmp
