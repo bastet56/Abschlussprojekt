@@ -1,8 +1,15 @@
 \chapter{Auswertung}
 Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folgenden Abschnitt vorgestellt, angewandt und miteinander verglichen. Außerdem wird die Genauigkeit der beiden Methoden über die Wiederfindungsrate überprüft.
 \section{Kalibrierung}
+
 \section{Quantifizierung mittels Kalibriergerade}
+
 \section{Quantifizierung mittels Festfaktor}
+In der Analysevorschrift zur Bestimmung von HMF in Honig ist folgende Formel angegeben:
+	\[HMF[mg/kg]=\frac{ E * 1920 }{ m }\]
+Hierbei steht E für die Extinktion, m für die Probenmasse und der Festfaktor 1920 setzt sich zusammen aus dem molaren Extinktionskoeffizienten und der Verdünnung und Umrechnung in die gewünschte Einheit mg/kg.
+	\[1920=\frac{ 126g/mol * 50 }{ 3,28125L/mol }\]
+
 \section{Wiederfindungsrate}
 Da zur Bestimmung des HMF-Gehalts nur ideale Kalibrierlösungen bzw. der angegebene Festfaktor verwendet wurden, muss der Einfluss der Probenmatrix auf das Analysenergebnis ermittelt werden. Hierzu wird die Wiederfindungsrate anhand einer Aufstockung ermittelt. Die Wiederfindungsrate (WFR) ist der Quotient aus dem Istwert und dem Sollwert der Probe. Zur Berechnung der Wiederfindung wird die folgende Formel verwendet:
 	\[WFR=\frac{ Gefundener Gehalt + Istwert }{ Gefundener Gehalt + Sollwert } *100 \]
@@ -30,3 +37,12 @@ Bestimmung der zweiten Aufstockung nach Kalibriergeraden:
 Beide Wiederfindungsraten sind nahe 100 Prozent jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder, während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
 	
 \section{Standardaddition}
+Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde bietet sich ein Quantifizierung über Standardaddition an. So lässt sich auch der Einfluss der, nach der Abtrennung noch enthaltenen, Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur Unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe(hier die Mittelwerte der sechs Bestimmungen von Probe 3) sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. 
+%Diagramm hier einfügen
+Zieht man durch die erhaltenen Punkte eine Gerade und verlängert sie zurück bis sie die X-Achse im negativen Bereich schneidet, kann man an diesem Punkt die Konzentration der Probe graphisch ablesen. Der Gehalt der Probe lässt sich zudem über die lineare Regression der Geraden bestimmen. Sie lautet bei dieser Analyse:
+	\[y=0,0058*x+0,1572\] 
+Setzt man y nun gleich 0 und löst nach x auf erhält man die Konzentration der Probe in mg/kg.
+ 	\[0=0,0058*x+0,1572\] 
+	\[x=\frac{ -1,572 }{ 0,0058 }   |*-1\] 
+	\[x=27mg/kg\] 
+Der über Standardaddition ermittelte Gehalt an HMF in der Probe 3 ist damit 27mg/kg und entspricht damit praktisch dem Gehalt der mit den anderen Quantifizierungsmethoden ermittelt wurde.
