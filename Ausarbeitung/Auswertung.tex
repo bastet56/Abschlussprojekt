@@ -8,7 +8,56 @@ Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folge
 In der Analysevorschrift zur Bestimmung von HMF in Honig ist folgende Formel angegeben:
 	\[HMF[mg/kg]=\frac{ E * 1920 }{ m }\]
 Hierbei steht E für die Extinktion, m für die Probenmasse und der Festfaktor 1920 setzt sich zusammen aus dem molaren Extinktionskoeffizienten und der Verdünnung und Umrechnung in die gewünschte Einheit mg/kg.
-	\[1920=\frac{ 126g/mol * 50 }{ 3,28125L/mol }\]
+	\[Faktor=\frac{ M(HMF)*V }{ \epsilon }*1000000\]
+	
+	\[1920=\frac{ 126g/mol * 0,05L }{ 3,28125L/mol }*1000000\]
+Beispielrechnung zu Probe 3 (warm):
+	\[HMF[mg/kg]=\frac{ 1,9812 * 1920 }{ 10,592g }\]
+	\[HMF[mg/kg]=379mg/kg\]
+\section{Ergebnisse der analysierten Proben}
+Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifiziert und in einer Tabelle aufgetragen.
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{p{0.30\linewidth}|p{0.17\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}} 
+			Probenbezeichnung & Extinktion & Gehalt HMF über Kalibrierung \ [mg/kg] &  Gehalt HMF über Festfaktor \ [mg/kg]\\
+			\hline
+			1 Flotte Biene Frühlingsblütenhonig (kalt) & 0,016 & <5 & <5\\
+			\hline
+			1 Flotte Biene Frühlingsblütenhonig (warm) & 1,6041 & 256 & 307\\
+			\hline
+			2 Flotte Biene Gebirgsblütenhonig (kalt) & 0,0102 & <5 & <5\\
+			\hline
+			2 Flotte Biene Gebirgsblütenhonig (warm) & 1,3184 & 210 & 252\\
+			\hline
+			3 Sommerblütenhonig (kalt) & 0,1500 & 20 & 27\\
+			\hline
+			3 Sommerblütenhonig (warm) & 1,9812 & 316 & 379\\
+			\hline
+			4 Blütenhonig (kalt) & 0,0621 & 7 & 12\\
+			\hline
+			4 Blütenhonig (warm) & 1,5500 & 245 & 294\\
+			\hline
+			5 Mexico (kalt) & 0,0639 & 8 & 12\\
+			\hline
+			5 Mexico (warm) & 1,2237 & 194 & 234\\
+			\hline
+			6 Ägäis (kalt) & 0,0871 & 11 & 16\\
+			\hline
+			6 Ägäis (warm) & 1,1639 & 185 & 223\\
+			\hline
+			7 Waldhonig & 0,0362 & <5 & 7\\
+			\hline
+			8 Zuckerrübensirup & n.B. & n.B. & n.B.\\
+			\hline
+			9 Winterfutter & 0,0255 & <5 & 5\\
+			\hline
+			10 Invertzucker & 1,541 & 249 & 298\\
+
+		\end{tabular}
+	\caption{Messergebnisse}
+	\label{tab:Messergebnisse}
+\end{table}
 
 \section{Wiederfindungsrate}
 Da zur Bestimmung des HMF-Gehalts nur ideale Kalibrierlösungen bzw. der angegebene Festfaktor verwendet wurden, muss der Einfluss der Probenmatrix auf das Analysenergebnis ermittelt werden. Hierzu wird die Wiederfindungsrate anhand einer Aufstockung ermittelt. Die Wiederfindungsrate (WFR) ist der Quotient aus dem Istwert und dem Sollwert der Probe. Zur Berechnung der Wiederfindung wird die folgende Formel verwendet:
@@ -34,7 +83,7 @@ Bestimmung der zweiten Aufstockung nach Festfaktor:
 	\[95,4=\frac{ 28mg/kg + 73,1mg/kg }{ 106mg/kg } *100 \]
 Bestimmung der zweiten Aufstockung nach Kalibriergeraden:
 	\[108,2=\frac{ 21mg/kg + 73,1mg/kg }{ 87mg/kg } *100 \]
-Beide Wiederfindungsraten sind nahe 100 Prozent jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder, während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
+Beide Wiederfindungsraten sind nahe 100 \% jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder, während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
 	
 \section{Standardaddition}
 Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde bietet sich ein Quantifizierung über Standardaddition an. So lässt sich auch der Einfluss der, nach der Abtrennung noch enthaltenen, Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur Unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe(hier die Mittelwerte der sechs Bestimmungen von Probe 3) sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. 
