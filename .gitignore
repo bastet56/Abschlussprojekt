@@ -50,3 +50,5 @@ Ausarbeitung/master.dvi
 *.bbl
 ~$ToDo.docx
 *.tmp
+*.lof
+*.lot
