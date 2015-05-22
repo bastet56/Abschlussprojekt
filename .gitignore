@@ -44,7 +44,6 @@ Temporary Items
 *.log
 *.aux
 *.toc
-*.pdf
 *.blg
 Ausarbeitung/master.dvi
 *.bbl
