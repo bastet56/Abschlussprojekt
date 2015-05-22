@@ -52,3 +52,6 @@ Ausarbeitung/master.dvi
 *.tmp
 *.lof
 *.lot
+*.out
+*.tcp
+*.tps

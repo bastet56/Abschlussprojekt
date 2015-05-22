@@ -1,7 +1,7 @@
-%% Basierend auf einer TeXnicCenter-Vorlage von Mark Müller
+%% Basierend auf einer TeXnicCenter-Vorlage von Mark MÃ¼ller
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Wählen Sie die Optionen aus, indem Sie % vor der Option entfernen  
+% WÃ¤hlen Sie die Optionen aus, indem Sie % vor der Option entfernen  
 % Dokumentation des KOMA-Script-Packets: scrguide
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -10,55 +10,58 @@
 \documentclass[%
 %5paper,							% alle weiteren Papierformat einstellbar
 %landscape,						% Querformat
-12pt,			  					% Schriftgröße (12pt, 11pt (Standard))
+12pt,			  					% SchriftgrÃ¶ÃŸe (12pt, 11pt (Standard))
 %BCOR1cm,							% Bindekorrektur, bspw. 1 cm
-%DIVcalc,							% führt die Satzspiegelberechnung neu aus
+%DIVcalc,							% fÃ¼hrt die Satzspiegelberechnung neu aus
 %											  s. scrguide 2.4
 %twoside,							% Doppelseiten
 %twocolumn,						% zweispaltiger Satz
 %halfparskip*,				% Absatzformatierung s. scrguide 3.1
 %headsepline,					% Trennline zum Seitenkopf	
-%footsepline,					% Trennline zum Seitenfuß
+%footsepline,					% Trennline zum SeitenfuÃŸ
 %titlepage,						% Titelei auf eigener Seite
-%normalheadings,			% Überschriften etwas kleiner (smallheadings)
+%normalheadings,			% Ãœberschriften etwas kleiner (smallheadings)
 %idxtotoc,						% Index im Inhaltsverzeichnis
 %liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
 %bibtotoc,						% Literaturverzeichnis im Inhalt
-%abstracton,					% Überschrift über der Zusammenfassung an	
+%abstracton,					% Ãœberschrift Ã¼ber der Zusammenfassung an	
 %leqno,   						% Nummerierung von Gleichungen links
-%fleqn,								% Ausgabe von Gleichungen linksbündig
-%draft								% überlangen Zeilen in Ausgabe gekennzeichnet
+%fleqn,								% Ausgabe von Gleichungen linksbÃ¼ndig
+%draft								% Ã¼berlangen Zeilen in Ausgabe gekennzeichnet
 ]
 {scrreprt}
 
 \usepackage{setspace}
 \onehalfspacing
 
-%\pagestyle{empty}		% keine Kopf und Fußzeile (k. Seitenzahl)
+%\pagestyle{empty}		% keine Kopf und FuÃŸzeile (k. Seitenzahl)
 %\pagestyle{headings}	% lebender Kolumnentitel  
 
 
 %% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[ansinew]{inputenc}
-\usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
+
+\usepackage{lmodern} %Type1-Schriftart fÃ¼r nicht-englische Texte
+
+\usepackage{hyperref}
 
 
-%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+%% Packages fÃ¼r Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx} %%Zum Laden von Grafiken
 %\usepackage{subfig} %%Teilabbildungen in einer Abbildung
 %\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
 
 %% Beachten Sie:
 %% Die Einbindung einer Grafik erfolgt mit \includegraphics{Dateiname}
-%% bzw. über den Dialog im Einfügen-Menü.
+%% bzw. Ã¼ber den Dialog im EinfÃ¼gen-MenÃ¼.
 %% 
-%% Im Modus "LaTeX => PDF" können Sie u.a. folgende Grafikformate verwenden:
+%% Im Modus "LaTeX => PDF" kÃ¶nnen Sie u.a. folgende Grafikformate verwenden:
 %%   .jpg  .png  .pdf  .mps
 %% 
 %% In den Modi "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
-%% können Sie u.a. folgende Grafikformate verwenden:
+%% kÃ¶nnen Sie u.a. folgende Grafikformate verwenden:
 %%   .eps  .ps  .bmp  .pict  .pntg
 
 
@@ -68,6 +71,7 @@
 \begin{document}
 
 \pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
+\setlength{\parindent}{0cm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,17 +80,17 @@
 
 %% eigene Titelseitengestaltung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
 %\begin{titlepage}
-%Einsetzen der TXC Vorlage "Deckblatt" möglich
+%Einsetzen der TXC Vorlage "Deckblatt" mÃ¶glich
 %\end{titlepage}
 
 %% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
 %\titlehead{Titelkopf }
 %\subject{Typisierung}
-\title{Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter Berücksichtigung von Lagerdauer und thermischem Einfluss}
+\title{Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter BerÃ¼cksichtigung von Lagerdauer und thermischem Einfluss}
 \author{Sabine Klein, Christian Rasch}
 %\and{Der Name des Co-Autoren}
-%\thanks{Fußnote}			% entspr. \footnote im Fließtext
-%\date{}							% falls anderes, als das aktuelle gewünscht
+%\thanks{FuÃŸnote}			% entspr. \footnote im FlieÃŸtext
+%\date{}							% falls anderes, als das aktuelle gewÃ¼nscht
 %\publishers{Herausgeber}
 
 %% Widmungsseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,7 +109,7 @@
 \newpage
 \include{Einleitung}
 \include{Planung}
-\include{Durchführung}
+\include{Durchfuehrung}
 \include{Auswertung}
 \include{Fazit}
 \include{ExemplarischeVorschrift}
