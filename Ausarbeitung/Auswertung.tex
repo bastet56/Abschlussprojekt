@@ -1,9 +1,47 @@
 \chapter{Auswertung}
 Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folgenden Abschnitt vorgestellt, angewandt und miteinander verglichen. Außerdem wird die Genauigkeit der beiden Methoden über die Wiederfindungsrate überprüft.
 \section{Kalibrierung}
+Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität des Messsignals bei verschiedenen Konzentrationen zu gewährleisten müssen mehrer Kalibrierlösungen vermessen werden. Da ein von 5 bis 300mg/kg großer Bereich abgedeckt werden soll fiel die Entscheidung auf sechs Messpunkte. Die Konzentrationen der Kalibrierstandard sind in folgender Tabelle aufgetragen:
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{p{0.30\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}}} 
+			Standard & Extinktion & Konzentration \ [mg/L] &  Massenanteil \ [mg/kg]\\
+			\hline
+			Std 1 & 0,0400 & 1,004 & 5\\
+			\hline
+			Std 2 & 0,1353 & 3,032 & 15\\
+			\hline
+			Std 3 & 0,1687 & 5,020 & 25\\
+			\hline
+			Std 4 & 0,3214 & 10,040 & 50\\
+			\hline
+			Std 5 & 0,9453 & 30,320 & 152\\
+			\hline
+			Std 6 & 1,8987 & 60,640 & 303\\
+
+		\end{tabular}
+	\caption{Kalibrierungen}
+	\label{tab:Kalibrierungen}
+\end{table}
+Die abgegebenen Gehalte und Konzentrationen beziehen sich auf eine theoretische Probeneinwaage von 10,0g Honig.\\
+Trägt man nun die Kalibrierpunkte in einem Diagramm ein ergibt sich eine Gerade mit der Funktion $y=0,0309*x+0,0175$ bei einem Bestimmtheitsmaß von 0,9997.
+%Diagramm mit Kalibriergeraden hier einfügen
 
 \section{Quantifizierung mittels Kalibriergerade}
+Die durch die Kalibrierung ermittelte Funktion wird zur Bestimmung des Analytgehalts verwendet.
+	\[y=m*x+b\]
+	\[y=0,0309*x+0,0175\]
+	\[x=\frac{ y-0,0175 }{ 0,0309 }\]
+Beispielrechnung zu Probe 3 (warm):
+	\[x=\frac{ 1,9812-0,0175 }{ 0,0309 }\]
+	\[x=63,55mg/L\]
+Die Massenkonzentration muss nun noch in den Massenanteil umgerechnet werden.
+	\[w[mg/kg]=\frac{ \beta*V }{ 1L * m }*1000000\]
+	\[w[mg/kg]=\frac{ 0,06355g/L*0,05L }{ 1L * 10,041g }*1000000\]
+	\[w[mg/kg]=316mg/kg\]
 
+	
 \section{Quantifizierung mittels Festfaktor}
 In der Analysevorschrift zur Bestimmung von HMF in Honig ist folgende Formel angegeben:
 	\[HMF[mg/kg]=\frac{ E * 1920 }{ m }\]
@@ -12,7 +50,7 @@ Hierbei steht E für die Extinktion, m für die Probenmasse und der Festfaktor 1
 	
 	\[1920=\frac{ 126g/mol * 0,05L }{ 3,28125L/mol }*1000000\]
 Beispielrechnung zu Probe 3 (warm):
-	\[HMF[mg/kg]=\frac{ 1,9812 * 1920 }{ 10,592g }\]
+	\[HMF[mg/kg]=\frac{ 1,9812 * 1920 }{ 10,041g }\]
 	\[HMF[mg/kg]=379mg/kg\]
 \section{Ergebnisse der analysierten Proben}
 Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifiziert und in einer Tabelle aufgetragen.
