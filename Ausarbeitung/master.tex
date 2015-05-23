@@ -22,8 +22,8 @@
 %titlepage,						% Titelei auf eigener Seite
 %normalheadings,			% Überschriften etwas kleiner (smallheadings)
 %idxtotoc,						% Index im Inhaltsverzeichnis
-%liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
-%bibtotoc,						% Literaturverzeichnis im Inhalt
+liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
+bibtotoc,						% Literaturverzeichnis im Inhalt
 %abstracton,					% Überschrift über der Zusammenfassung an	
 %leqno,   						% Nummerierung von Gleichungen links
 %fleqn,								% Ausgabe von Gleichungen linksbündig
@@ -47,6 +47,8 @@
 
 \usepackage{hyperref}
 
+\usepackage{bibgerm}
+
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -55,6 +57,8 @@
 \usepackage[font=small,labelfont=bf]{caption}
 \captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
 
+\usepackage{lastpage}
+\usepackage{fancyhdr}
 
 %% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx} %%Zum Laden von Grafiken
@@ -80,7 +84,7 @@
 
 \pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
 \setlength{\parindent}{0cm}
-
+\pagenumbering{arabic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Ihr Artikel                                                       %%
@@ -92,7 +96,14 @@
 %\end{titlepage}
 
 %% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
-%\titlehead{Titelkopf }
+\titlehead{Berufsbildende Schule Naturwissenschaften\\
+Ludwigshafen\\
+Fachschule\\
+Fachbereich Chemietechnik\\
+Schwerpunkt Labortechnik\\
+Schuljahr 2014/2015\\
+Projektarbeit im Rahmen des Lernmoduls „Abschlussprojekt“
+}
 %\subject{Typisierung}
 \title{Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter Berücksichtigung von Lagerdauer und thermischem Einfluss}
 \author{Sabine Klein, Christian Rasch}
@@ -107,14 +118,27 @@
 \maketitle 						% Titelei wird erzeugt
 
 %% Zusammenfassung nach Titel, vor Inhaltsverzeichnis %%%%%%%%%%%%%%%%%
+
 \newpage
 \begin{abstract}
 1000 Zeichen Text in Deutsch und Englisch. 
 \end{abstract}
 \newpage
+\begingroup
+\renewcommand*{\chapterpagestyle}{empty}
+\pagestyle{empty}
 \tableofcontents			% Inhaltsverzeichnis
+\endgroup
 
 \newpage
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\fancypagestyle{plain}{%
+\fancyfoot[ER,OR]{\thepage\ of \pageref*{LastPage}}}
+
+\rfoot{\thepage\ of \pageref*{LastPage}}
 \include{Einleitung}
 \include{Planung}
 \include{Durchfuehrung}
@@ -124,4 +148,8 @@
 
 \listoffigures
 \listoftables
+
+\bibliographystyle{gerunsrt}
+\bibliography{Quellen}
+
 \end{document}
