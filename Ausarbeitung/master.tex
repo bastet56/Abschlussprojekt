@@ -10,7 +10,7 @@
 \documentclass[%
 %5paper,							% alle weiteren Papierformat einstellbar
 %landscape,						% Querformat
-12pt,			  					% Schriftgröße (12pt, 11pt (Standard))
+11pt,			  					% Schriftgröße (12pt, 11pt (Standard))
 %BCOR1cm,							% Bindekorrektur, bspw. 1 cm
 %DIVcalc,							% führt die Satzspiegelberechnung neu aus
 %											  s. scrguide 2.4
@@ -46,6 +46,14 @@
 \usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
 
 \usepackage{hyperref}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage[font=small,labelfont=bf]{caption}
+\captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
 
 
 %% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%

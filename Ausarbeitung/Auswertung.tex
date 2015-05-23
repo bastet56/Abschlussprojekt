@@ -5,8 +5,9 @@ Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität 
 
 \begin{table}[htbp]
 	\centering
-		\begin{tabular}{p{0.30\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}|p{0.2\linewidth}}
-			Standard & Extinktion & Konzentration / [mg/L] &  Massenanteil / [mg/kg]\\
+	\caption{Kalibrierungen}
+		\begin{tabular}{l|c|c|c}
+			Standard & Extinktion & Konzentration in mg/L &  Massenanteil in mg/kg\\
 			\hline
 			Std 1 & 0,0400 & 1,004 & 5\\
 			\hline
@@ -20,8 +21,7 @@ Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität 
 			\hline
 			Std 6 & 1,8987 & 60,640 & 303
 		\end{tabular}
-	\caption{Kalibrierungen}
-	\label{tab:Kalibrierungen}
+		\label{tab:Kalibrierungen}
 \end{table}
 
 Die abgegebenen Gehalte und Konzentrationen beziehen sich auf eine theoretische Probeneinwaage von 10,0g Honig.\\
@@ -29,7 +29,7 @@ Trägt man nun die Kalibrierpunkte in einem Diagramm ein ergibt sich eine Gerade
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1.00\textwidth]{../Bilder/DiagrammKalibrierung.pdf}
+		\includegraphics[width=1.00\textwidth]{../Bilder/DiagrammKalibrierung2.pdf}
 	\caption{Kalibriergerade}
 	\label{fig:DiagrammKalibrierung}
 \end{figure}
@@ -64,43 +64,42 @@ Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifizier
 
 \begin{table}[htbp]
 	\centering
-		\begin{tabular}{p{0.30\linewidth}|p{0.17\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}} 
-			Probenbezeichnung & Extinktion & Gehalt HMF über Kalibrierung \ [mg/kg] &  Gehalt HMF über Festfaktor \ [mg/kg]\\
-			\hline
-			1 Flotte Biene Frühlingsblütenhonig (kalt) & 0,016 & <5 & <5\\
-			\hline
-			1 Flotte Biene Frühlingsblütenhonig (warm) & 1,6041 & 256 & 307\\
-			\hline
-			2 Flotte Biene Gebirgsblütenhonig (kalt) & 0,0102 & <5 & <5\\
-			\hline
-			2 Flotte Biene Gebirgsblütenhonig (warm) & 1,3184 & 210 & 252\\
-			\hline
-			3 Sommerblütenhonig (kalt) & 0,1500 & 20 & 27\\
-			\hline
-			3 Sommerblütenhonig (warm) & 1,9812 & 316 & 379\\
-			\hline
-			4 Blütenhonig (kalt) & 0,0621 & 7 & 12\\
-			\hline
-			4 Blütenhonig (warm) & 1,5500 & 245 & 294\\
-			\hline
-			5 Mexico (kalt) & 0,0639 & 8 & 12\\
-			\hline
-			5 Mexico (warm) & 1,2237 & 194 & 234\\
-			\hline
-			6 Ägäis (kalt) & 0,0871 & 11 & 16\\
-			\hline
-			6 Ägäis (warm) & 1,1639 & 185 & 223\\
-			\hline
-			7 Waldhonig & 0,0362 & <5 & 7\\
-			\hline
-			8 Zuckerrübensirup & n.B. & n.B. & n.B.\\
-			\hline
-			9 Winterfutter & 0,0255 & <5 & 5\\
-			\hline
-			10 Invertzucker & 1,541 & 249 & 298\\
-
-		\end{tabular}
 	\caption{Messergebnisse}
+		\begin{tabular}{C{0.1\linewidth}|C{0.24\linewidth}|C{0.14\linewidth}|C{0.23\linewidth}|C{0.25\linewidth}} 
+			Proben-nummer & Probe & Extinktion & Gehalt HMF über Kalibrierung \newline in mg/kg &  Gehalt HMF über Festfaktor in mg/kg\\
+			\hline
+			1 & Flotte Biene Frühlingsblütenhonig (kalt) & 0,016 & <5 & <5\\
+			\hline
+			1 & Flotte Biene Frühlingsblütenhonig (warm) & 1,6041 & 256 & 307\\
+			\hline
+			2 & Flotte Biene Gebirgsblütenhonig (kalt) & 0,0102 & <5 & <5\\
+			\hline
+			2 & Flotte Biene Gebirgsblütenhonig (warm) & 1,3184 & 210 & 252\\
+			\hline
+			3 & Sommerblütenhonig (kalt) & 0,1500 & 20 & 27\\
+			\hline
+			3 & Sommerblütenhonig (warm) & 1,9812 & 316 & 379\\
+			\hline
+			4 & Blütenhonig (kalt) & 0,0621 & 7 & 12\\
+			\hline
+			4 & Blütenhonig (warm) & 1,5500 & 245 & 294\\
+			\hline
+			5 & Mexico (kalt) & 0,0639 & 8 & 12\\
+			\hline
+			5 & Mexico (warm) & 1,2237 & 194 & 234\\
+			\hline
+			6 & Ägäis (kalt) & 0,0871 & 11 & 16\\
+			\hline
+			6 & Ägäis (warm) & 1,1639 & 185 & 223\\
+			\hline
+			7 & Waldhonig & 0,0362 & <5 & 7\\
+			\hline
+			8 & Zuckerrübensirup & n.B. & n.B. & n.B.\\
+			\hline
+			9 & Winterfutter & 0,0255 & <5 & 5\\
+			\hline
+			10 & Invertzucker & 1,541 & 249 & 298
+		\end{tabular}
 	\label{tab:Messergebnisse}
 \end{table}
 
