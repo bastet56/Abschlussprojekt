@@ -40,6 +40,9 @@ Weiterhin zeigt HMF in wässriger Lösung bei 282 nm ein Absorptionsmaximum. Üb
 Alternativ kann HMF auch per Gaschromatographie oder HPLC bestimmt werden. Hierfür müssen die Proben in einer säulengängigen Form vorliegen und die Methoden für eine Quantifizierung mit einem HMF-Standard kalibriert werden.~\cite{Patent}
 Alle hier genannten HMF-Nachweise sind mit hohem chemischem und apparativem Aufwand verbunden. Außerdem sind die verwendeten Chemikalien gesundheitsschädlich oder sogar giftig und müssen deshalb mit größter Vorsicht gehandhabt werden. Aus diesen Gründen wurde von Merck ein einfacher Schnelltest entwickelt. Dieser erfolgt mit Teststäbchen, die mit zwei Reaktinslösungen belegt sind. Die Stäbchen müssen nur in die Probe eingetaucht und dann in einem Reflektometer vermessen werden. Hierbei erfolgt die Farbreaktion auf dem Teststäbchen. Das Gerät kann HMF-Konzentrationen zwischen 1 und 60 mg/L erfassen. Höher konzentrierte Proben müssen verdünnt und das Messergebnis mit dieser Verdünnung verrechnet werden. Die Farbreaktion ist zeitabhängig, deshalb muss auch hierbei die Reaktionszeit genau eingehalten werden.~\cite{Merck}
 
+\section{Bedeutung von HMF}
+HMF stand lange im verdacht krebserzeugende Wirkung zu haben.
+
 \section{Funktionsweise eines UV/VIS-Spektroskops}
 %Bild schematisch Darstellung vom Messablauf
 Die UV/VIS-Spektrometrie gehört zur Absorptionsspektroskopie. Dabei wird die Konzentration
@@ -72,5 +75,76 @@ Am zweiten Praktikumstag sollten die Proben vermessen werden. Da hierbei erkannt
 Während dem dritten Tag wurde die Kalibrierung wiederholt und eine Sechsfachanalyse, sowie eine Aufstockung mit HMF einer Honigprobe durchgeführt.\\
 
 \section{Berechnungsgrundlagen}
+Für die Berechnung der notwendigen Kalibrierlösungen berücksichtigten wir das in den Versuchen von WINKLER die Extinktion von HMF zwischen 5 - 300 mg/kg einen linearen Verlauf aufweist. Um die Möglichkeit eines zufälligen Wägefehlers zu minimieren werden zwei Stammlösungen mit verschiedenen Konzentrationen angesetzt. Da wir eine Kalibrierung mit 5 mg/kg benötigen, müssen die Stammlösungen noch entsprechend verdünnt werden. Für die kleinste und größte Kalibration werden folgende Mengen HMF benötigt:
 
- 
+	\[w[mg/kg]=\frac{ m(HMF) }{ m(Gesamt) }\]
+	
+Die Formel wird nach m(HMF) umgestellt.
+
+	\[m(HMF)=w[mg/kg]*m(Gesamt)\]
+	
+Für 5mg/kg bedeutet dies:
+	
+	\[0,05mg=5mg/kg*0,01kg\]
+	
+Und für 300mg/kg:
+
+	\[3,00mg=300mg/kg*0,01kg\]
+	
+Alle Massenanteile beziehen sich auf eine ideale Einwaage von 10,00g und ein Endvolumen von 50ml.
+Da die Kalibriergerade der Software die Massenkonzentration in mg/L ausgibt wurden die Gehalte zusätzlich entsprechend umgerechnet:
+
+\[\beta=\frac{ m(HMF) }{ V }\]
+
+Das bedeutet bei 5mg/kg:
+
+\[1mg/L=\frac{ 0,05mg }{ 0,05L }\]
+
+Und wieder für 300mg/kg:
+
+\[60mg/L=\frac{ 3,00mg }{ 0,05L }\]
+
+Da wir vor allem Gehalte zwischen 5 bis 100mg/kg HMF in unseren Proben erwarten liegen die meisten unserer Kalibrierpunkte eher in diesem Konzentrationsbereich.
+Folgende Stammlösungen sind anzusetzen:
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{l|c|c|c}
+			Bezeichnung & m(HMF) in mg & Konzentration in mg/L & Bemerkung\\
+			\hline
+			Stammlösung 1 & 50 & 5000  & in 10ml Messkolben\\
+			\hline
+			Stammlösung 1.1 & 5 & 50 & 1ml SL1 in 100ml\\
+			\hline
+			Stammlösung 2 & 150 & 15000 & in 10ml Messkolben\\
+			\hline
+			Stammlösung 2.1 & 15 & 150 & 1ml SL2 in 100ml\\
+		\end{tabular}
+	\caption{Stammlösungen}
+	\label{tab:Stammlösungen}
+\end{table}
+
+Aus den Stammlösungen werden folgende Faktoren hergestellt:
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{l|c|c|c|c}
+			Bezeichnung & m(HMF) in mg & Konzentration in mg/L & Massenanteil in mg/kg & Bemerkung\\
+			\hline
+			Faktor 1 & 0,05 & 1,00  & 5 & 1ml SL1.1 in 50ml\\
+			\hline
+			Faktor 2 & 0,15 & 3,00  & 15 & 1ml SL2.1 in 50ml\\
+			\hline
+			Faktor 3 & 0,25 & 5,00  & 25 & 5ml SL1.1 in 50ml\\
+			\hline
+			Faktor 4 & 0,50 & 10,00 & 50 & 10ml SL1.1 in 50ml\\
+			\hline
+			Faktor 5 & 1,50 & 30,00 & 150 & 10ml SL2.1 in 50ml\\
+			\hline
+			Faktor 6 & 3,00 & 60,00 & 300 & 20ml SL2.1 in 50ml\\
+		\end{tabular}
+	\caption{Ideale Kalibrierfaktoren}
+	\label{tab:IdealeKalibrierfaktoren}
+\end{table}
+
+Alle diese Konzentrationen liegen idealen Berechnungen zugrunde. Die reellen Einwaagen sind unter dem Punkt 3 Dürchführung zu finden.
