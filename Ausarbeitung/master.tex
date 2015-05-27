@@ -8,34 +8,36 @@
 %% Optionen zum Layout des Artikels                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[%
-%5paper,							% alle weiteren Papierformat einstellbar
-%landscape,						% Querformat
-11pt,			  					% Schriftgröße (12pt, 11pt (Standard))
-%BCOR1cm,							% Bindekorrektur, bspw. 1 cm
-%DIVcalc,							% führt die Satzspiegelberechnung neu aus
-%											  s. scrguide 2.4
-%twoside,							% Doppelseiten
-%twocolumn,						% zweispaltiger Satz
-%halfparskip*,				% Absatzformatierung s. scrguide 3.1
-%headsepline,					% Trennline zum Seitenkopf	
-%footsepline,					% Trennline zum Seitenfuß
-%titlepage,						% Titelei auf eigener Seite
-%normalheadings,			% Überschriften etwas kleiner (smallheadings)
-%idxtotoc,						% Index im Inhaltsverzeichnis
-liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
-bibtotoc,						% Literaturverzeichnis im Inhalt
-%abstracton,					% Überschrift über der Zusammenfassung an	
-%leqno,   						% Nummerierung von Gleichungen links
-%fleqn,								% Ausgabe von Gleichungen linksbündig
-%draft								% überlangen Zeilen in Ausgabe gekennzeichnet
-]
-{scrreprt}
+%5paper,                            % alle weiteren Papierformat einstellbar
+%landscape,                     % Querformat
+11pt,                               % Schriftgröße (12pt, 11pt (Standard))
+%BCOR1cm,                           % Bindekorrektur, bspw. 1 cm
+%DIVcalc,                           % führt die Satzspiegelberechnung neu aus
+%                                             s. scrguide 2.4
+%twoside,                           % Doppelseiten
+%twocolumn,                     % zweispaltiger Satz
+%halfparskip*,              % Absatzformatierung s. scrguide 3.1
+%headsepline,                   % Trennline zum Seitenkopf  
+%footsepline,                   % Trennline zum Seitenfuß
+%titlepage,                     % Titelei auf eigener Seite
+%normalheadings,            % Überschriften etwas kleiner (smallheadings)
+%idxtotoc,                      % Index im Inhaltsverzeichnis
+liststotoc,                 % Abb.- und Tab.verzeichnis im Inhalt
+bibtotoc,                       % Literaturverzeichnis im Inhalt
+%abstracton,                    % Überschrift über der Zusammenfassung an   
+%leqno,                         % Nummerierung von Gleichungen links
+%fleqn,                             % Ausgabe von Gleichungen linksbündig
+%draft                              % überlangen Zeilen in Ausgabe gekennzeichnet
+]{scrreprt}
+
+\usepackage{geometry}
+\geometry{a4paper, top=20mm, left=28mm, right=30mm, bottom=30mm, headsep=10mm, footskip=15mm}
 
 \usepackage{setspace}
 \onehalfspacing
 
-%\pagestyle{empty}		% keine Kopf und Fußzeile (k. Seitenzahl)
-%\pagestyle{headings}	% lebender Kolumnentitel  
+%\pagestyle{empty}      % keine Kopf und Fußzeile (k. Seitenzahl)
+%\pagestyle{headings}   % lebender Kolumnentitel  
 
 
 %% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,7 +64,7 @@ bibtotoc,						% Literaturverzeichnis im Inhalt
 
 %% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx} %%Zum Laden von Grafiken
-%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+\usepackage{subfigure} %%Teilabbildungen in einer Abbildung
 %\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
 
 %% Beachten Sie:
@@ -86,36 +88,55 @@ bibtotoc,						% Literaturverzeichnis im Inhalt
 \setlength{\parindent}{0cm}
 \pagenumbering{arabic}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Ihr Artikel                                                       %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \begin{center}
+    \vspace*{2cm}
+      \Large{Berufsbildende Schule Naturwissenschaften}\\
+      \smallskip
+      \Large{Ludwigshafen}\\
+      \smallskip
+      \Large{Fachschule}\\
+      \smallskip
+      \Large{Fachbereich Chemietechnik}\\
+      \smallskip
+      \Large{Schwerpunkt Labortechnik}\\
+      \smallskip
+      \Large{Schuljahr 2014/2015}\\
+      \smallskip
+      \Large{Projektarbeit im Rahmen des Lernmoduls}
+      \smallskip
+      
+    \vspace{3cm}
 
-%% eigene Titelseitengestaltung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
-%\begin{titlepage}
-%Einsetzen der TXC Vorlage "Deckblatt" möglich
-%\end{titlepage}
+    \vspace{0.5\baselineskip} {\Huge \textbf{Abschlussprojekt}\\\vspace{1cm} \huge Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter Berücksichtigung von Lagerdauer und thermischem Einfluss}
+  \end{center}
 
-%% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
-\titlehead{Berufsbildende Schule Naturwissenschaften\\
-Ludwigshafen\\
-Fachschule\\
-Fachbereich Chemietechnik\\
-Schwerpunkt Labortechnik\\
-Schuljahr 2014/2015\\
-Projektarbeit im Rahmen des Lernmoduls „Abschlussprojekt“
-}
-%\subject{Typisierung}
-\title{Die Bestimmung des Massenanteils von Hydroxymethylfurfural (HMF) mittels UV/VIS Spektroskopie in Honig unter Berücksichtigung von Lagerdauer und thermischem Einfluss}
-\author{Sabine Klein, Christian Rasch}
-%\and{Der Name des Co-Autoren}
-%\thanks{Fußnote}			% entspr. \footnote im Fließtext
-%\date{}							% falls anderes, als das aktuelle gewünscht
-%\publishers{Herausgeber}
+  \vfill
+
+  {\large
+    \begin{tabular}[l]{ll}
+      Vorgelegt von: & Sabine Klein und Christian Rasch\\
+      Betreuer: & Dr. Gerhard Peiter\\
+      Datum der Abgabe: & 02.06.2015
+    \end{tabular}
+  }
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+\vspace*{100pt} Ich versichere, dass ich diese Masterarbeit selbstst\"andig verfasst und nur die
+angegebenen Quellen und Hilfsmittel verwendet habe.
+
+\vspace*{50pt}
+
+
+Abgabedatum: 29.08.2012 \newpage
+
+%%%%%%%%%%%%%%%% END OF TITLEPAGE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Widmungsseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\dedication{Widmung}
-
-\maketitle 						% Titelei wird erzeugt
 
 %% Zusammenfassung nach Titel, vor Inhaltsverzeichnis %%%%%%%%%%%%%%%%%
 
@@ -127,7 +148,7 @@ Projektarbeit im Rahmen des Lernmoduls „Abschlussprojekt“
 \begingroup
 \renewcommand*{\chapterpagestyle}{empty}
 \pagestyle{empty}
-\tableofcontents			% Inhaltsverzeichnis
+\tableofcontents            % Inhaltsverzeichnis
 \endgroup
 
 \newpage
