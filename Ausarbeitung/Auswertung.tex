@@ -1,7 +1,7 @@
 \chapter{Auswertung}
 Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folgenden Abschnitt vorgestellt, angewandt und miteinander verglichen. Außerdem wird die Genauigkeit der beiden Methoden über die Wiederfindungsrate überprüft.
 \section{Kalibrierung}
-Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität des Messsignals bei verschiedenen Konzentrationen zu gewährleisten müssen mehrere Kalibrierlösungen vermessen werden. Da ein von 5 bis 300mg/kg großer Bereich abgedeckt werden soll, fiel die Entscheidung auf sechs Messpunkte. Die Konzentrationen der Kalibrierstandards sind in folgender Tabelle \ref{tab:Kalibrierungen} aufgetragen:
+Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität des Messsignals bei verschiedenen Konzentrationen zu gewährleisten, müssen mehrere Kalibrierlösungen vermessen werden. Da ein von 5 bis 300mg/kg großer Bereich abgedeckt werden soll, fiel die Entscheidung auf sechs Messpunkte. Die Konzentrationen der Kalibrierstandards sind in folgender Tabelle \ref{tab:Kalibrierungen} eingetragen:
 
 \begin{table}[htbp]
     \centering
@@ -34,7 +34,7 @@ Trägt man nun die Kalibrierpunkte in einem Diagramm ein, ergibt sich eine Gerad
     \label{diag:DiagrammKalibrierung}
 \end{diagram}
 
-
+\newpage
 \section{Quantifizierung mittels Kalibriergerade}
 Die durch die Kalibrierung ermittelte Funktion wird zur Bestimmung des Analytgehalts verwendet.
     \[y=m*x+b\]
@@ -48,19 +48,21 @@ Die Massenkonzentration muss nun noch in den Massenanteil umgerechnet werden.
     \[w[mg/kg]=\frac{ 0,06355g/L*0,05L }{ 1L * 10,041g }*1000000\]
     \[w[mg/kg]=316mg/kg\]
 
-
+\newpage
 \section{Quantifizierung mittels Festfaktor}
 In der Analysevorschrift zur Bestimmung von HMF in Honig ist folgende Formel angegeben:
     \[HMF[mg/kg]=\frac{ E * 1920 }{ m }\]
-Hierbei steht E für die Extinktion, m für die Probenmasse und der Festfaktor 1920 setzt sich zusammen aus dem molaren Extinktionskoeffizienten und der Verdünnung und Umrechnung in die gewünschte Einheit mg/kg.
+Hierbei steht E für die Extinktion und m für die Probenmasse. Der Festfaktor 1920 setzt sich zusammen aus dem molaren Extinktionskoeffizienten, der Verdünnung und der Umrechnung in die gewünschte Einheit mg/kg.
     \[Faktor=\frac{ M(HMF)*V }{ \epsilon }*1000000\]
 
     \[1920=\frac{ 126g/mol * 0,05L }{ 3,28125L/mol }*1000000\]
 Beispielrechnung zu Probe 3 (warm):
     \[HMF[mg/kg]=\frac{ 1,9812 * 1920 }{ 10,041g }\]
     \[HMF[mg/kg]=379mg/kg\]
+
+\newpage
 \section{Ergebnisse der analysierten Proben}
-Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifiziert und die Ergebnisse in einer Tabelle aufgetragen.
+Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifiziert und die Ergebnisse in der Tabelle \ref{tab:Messergebnisse} festgehalten.
 
 \begin{table}[htbp]
     \centering
@@ -103,8 +105,9 @@ Alle Proben wurden mit den beiden zur Verfügung stehenden Methoden quantifizier
     \label{tab:Messergebnisse}
 \end{table}
 
+\newpage
 \section{Wiederfindungsrate}
-Es wurde von Probe 3 (kalt) eine Sechsfachbestimmung durchgeführt und folgende Werte ermittelt:
+Es wurde von Probe 3 (kalt) eine Sechsfachbestimmung durchgeführt und die in Tabelle \ref{tab:Sechsfachbestimmung} festgehaltenen Werte ermittelt:
 
 \begin{table}[htbp]
     \centering
@@ -127,7 +130,7 @@ Es wurde von Probe 3 (kalt) eine Sechsfachbestimmung durchgeführt und folgende 
     \label{tab:Sechsfachbestimmung}
 \end{table}
 
-Zudem wurde die Probe 3 mit zwei definierten Mengen HMF aufgestockt:
+Zudem wurde die Probe 3 mit zwei definierten Mengen HMF aufgestockt. Diese sind in Tabelle \ref{tab:Aufstockung} enthalten:
 
 \begin{table}[htbp]
     \centering
@@ -146,7 +149,7 @@ Da zur Bestimmung des HMF-Gehalts nur ideale Kalibrierlösungen bzw. der angegeb
     \[WFR=\frac{ Gefundener Gehalt + Istwert }{ Gefundener Gehalt + Sollwert } *100 \]
 Als Gefundener Gehalt wird der Mittelwert aus der Sechsfachbestimmung der Probe 3 verwendet.
     \[x(Mittelwert)=\frac{ x1+x2...xn }{ n } \]
-Die Berechnung des Mittelwertes nach dem in der Vorschrift angegeben  Festfaktor:
+Die Berechnung des Mittelwertes nach dem in der Vorschrift angegeben Festfaktor:
     \[28mg/kg=\frac{ 29mg/kg+31mg/kg+25mg/kg+25mg/kg+31mg/kg+28mg/kg }{ 6 } \]
 Die Berechnung des Mittelwertes nach der erstellten Kalibriergerade:
     \[21mg/kg=\frac{ 22mg/kg+23mg/kg+18mg/kg+19mg/kg+23mg/kg+21mg/kg }{ 6 } \]
@@ -155,7 +158,7 @@ Nach dem gemittelten Gehalt muss der aufgestockte Anteil an Analyt berechnet wer
     \[47,9mg/kg=\frac{ 0,502mg }{ 0,010483kg } \]
 In einer zweiten Aufstockung wurden 5ml Stammlösung 2.1 zugegeben, was einer Masse von 0,758mg entspricht. Auch hier wird mit der Einwaage von 10,365g der theoretische Massenanteil berechnet:
     \[73,1mg/kg=\frac{ 0,758mg }{ 0,010365kg } \]
-Mit den Mittelwerten und den theoretischen kann die Wiederfindungsrate berechnet werden.\\
+Mit den Mittelwerten und den theoretischen Werten kann die Wiederfindungsrate berechnet werden.\\
 Zuerst die erste Aufstockung anhand des Festfaktors:
     \[92,3=\frac{ 28mg/kg + 47,9mg/kg }{ 82mg/kg } *100 \]
 Und nach der Kalibriergeraden:
@@ -165,7 +168,7 @@ Bestimmung der zweiten Aufstockung nach Festfaktor:
     \[95,4=\frac{ 28mg/kg + 73,1mg/kg }{ 106mg/kg } *100 \]
 Bestimmung der zweiten Aufstockung nach Kalibriergeraden:
     \[108,2=\frac{ 21mg/kg + 73,1mg/kg }{ 87mg/kg } *100 \]
-Beide Wiederfindungsraten sind nahe 100\% jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder, während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist, obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
+Beide Wiederfindungsraten sind nahe 100\%. Jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder, während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist, obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
 \subsection{Standardabweichung}
 Da die Probe 3 sechs mal bestimmt wurde, bietet sich an die Standardabweichung zu ermitteln. Mit ihr kann eine Aussage über die Streuung der Messergebnisse getroffen werden. In einem ersten Schritt wird der Mittelwert der Sechsfachbestimmung von Probe 3 bestimmt. Dazu kann der Mittelwert aus dem Abschnitt über die Wiederfindungsrate verwendet werden. Exemplarisch wird die Quantifizierung über den Festfaktor verwendet.\\
 Mit den Messwerten kann die Varianz $s^{ 2 }$ ermittelt werden:
@@ -183,10 +186,10 @@ Die Standardabweichung beträgt 2,72mg/kg. Zur besseren Veranschaulichung kann n
     \[rel.s=\frac{ 2,72 }{ 28 }*100\%\]
     \[rel.s=9,7\%\]
 
-Die relative Standardabweichung beträgt somit 9,7\%. In Anbetracht der geringen gemessen Gehalte ist dies ein akzeptabler Wert.
+Die relative Standardabweichung beträgt somit 9,7\%. In Anbetracht des geringen gemessenen Gehaltes ist dies ein akzeptabler Wert.
 
 \section{Standardaddition}
-Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde, bietet sich eine zusätzliche Quantifizierung über Standardaddition an. So lässt sich auch der Einfluss der, nach der Abtrennung noch enthaltenen, Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe (hier die Mittelwerte der sechs Bestimmungen von Probe 3), sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. Das nachfolgende Diagramm \ref{diag:Standardaddidtion} verdeutlicht die Auswertung.
+Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde, bietet sich eine zusätzliche Quantifizierung über Standardaddition an. So lässt sich auch der Einfluss der nach der Abtrennung noch enthaltenen Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe (hier die Mittelwerte der sechs Bestimmungen von Probe 3), sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. Das nachfolgende Diagramm \ref{diag:Standardaddidtion} verdeutlicht die Auswertung.
 \begin{diagram}[htbp]
     \centering
         \includegraphics[width=1.00\textwidth]{../Bilder/Standardaddidtion.JPG}
