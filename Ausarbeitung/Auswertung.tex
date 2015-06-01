@@ -1,5 +1,5 @@
 \chapter{Auswertung}
-Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folgenden Abschnitt vorgestellt, angewandt und miteinander verglichen. Außerdem wird die Genauigkeit der beiden Methoden über die Wiederfindungsrate überprüft.
+Der HMF-Gehalt der Proben wird mit zwei Methoden bestimmt. Diese werden im folgenden Abschnitt vorgestellt, angewandt und miteinander verglichen. Außerdem wird die Genauigkeit der beiden Methoden über die Wiederfindungsrate verglichen.
 \section{Kalibrierung}
 Zur Bestimmung von HMF wird eine Kalibrierung durchgeführt. Um die Linearität des Messsignals bei verschiedenen Konzentrationen zu gewährleisten, müssen mehrere Kalibrierlösungen vermessen werden. Da ein von 5 bis 300mg/kg großer Bereich abgedeckt werden soll, fiel die Entscheidung auf sechs Messpunkte. Die Konzentrationen der Kalibrierstandards sind in folgender Tabelle \ref{tab:Kalibrierungen} eingetragen:
 
@@ -37,9 +37,11 @@ Trägt man nun die Kalibrierpunkte in einem Diagramm ein, ergibt sich eine Gerad
 \newpage
 \section{Quantifizierung mittels Kalibriergerade}
 Die durch die Kalibrierung ermittelte Funktion wird zur Bestimmung des Analytgehalts verwendet.
-    \[y=m*x+b\]
-    \[y=0,0309*x+0,0175\]
-    \[x=\frac{ y-0,0175 }{ 0,0309 }\]
+    \begin{eqnarray*}
+		y&=&m*x+b\\
+    y&=&0,0309*x+0,0175\\
+    x&=&\frac{ y-0,0175 }{ 0,0309 }
+		\end{eqnarray*}
 Beispielrechnung zu Probe 3 (warm):
     \[x=\frac{ 1,9812-0,0175 }{ 0,0309 }\]
     \[x=63,55mg/L\]
@@ -147,7 +149,7 @@ Zudem wurde die Probe 3 mit zwei definierten Mengen HMF aufgestockt. Diese sind 
 
 Da zur Bestimmung des HMF-Gehalts nur ideale Kalibrierlösungen bzw. der angegebene Festfaktor verwendet wurden, muss der Einfluss der Probenmatrix auf das Analysenergebnis ermittelt werden. Hierzu wird die Wiederfindungsrate anhand einer Aufstockung ermittelt. Die Wiederfindungsrate (WFR) ist der Quotient aus dem Istwert und dem Sollwert der Probe. Zur Berechnung der Wiederfindung wird die folgende Formel verwendet:
     \[WFR=\frac{ Gefundener Gehalt + Istwert }{ Gefundener Gehalt + Sollwert } *100 \]
-Als Gefundener Gehalt wird der Mittelwert aus der Sechsfachbestimmung der Probe 3 verwendet.
+Als gefundener Gehalt wird der Mittelwert aus der Sechsfachbestimmung der Probe 3 verwendet.
     \[x(Mittelwert)=\frac{ x1+x2...xn }{ n } \]
 Die Berechnung des Mittelwertes nach dem in der Vorschrift angegeben Festfaktor:
     \[28mg/kg=\frac{ 29mg/kg+31mg/kg+25mg/kg+25mg/kg+31mg/kg+28mg/kg }{ 6 } \]
@@ -163,14 +165,14 @@ Zuerst die erste Aufstockung anhand des Festfaktors:
     \[92,3=\frac{ 28mg/kg + 47,9mg/kg }{ 82mg/kg } *100 \]
 Und nach der Kalibriergeraden:
     \[104,4=\frac{ 21mg/kg + 47,9mg/kg }{ 66mg/kg } *100 \]
-Anhand der beiden Wiederfindungsraten kann man darauf schließen, dass die Quantifizierung mit der Kalibriergeraden richtigere Werte liefert. Zur Kontrolle werden beide Berechnungen noch einmal mit der zweiten Aufstockung durchgeführt.\\
+Anhand der beiden Wiederfindungsraten kann man darauf schließen, dass die Quantifizierung mit der Kalibriergeraden genauere Werte liefert. Zur Kontrolle werden beide Berechnungen noch einmal mit der zweiten Aufstockung durchgeführt.\\
 Bestimmung der zweiten Aufstockung nach Festfaktor:
     \[95,4=\frac{ 28mg/kg + 73,1mg/kg }{ 106mg/kg } *100 \]
 Bestimmung der zweiten Aufstockung nach Kalibriergeraden:
     \[108,2=\frac{ 21mg/kg + 73,1mg/kg }{ 87mg/kg } *100 \]
-Beide Wiederfindungsraten sind nahe 100\%, bei ungefähr gleichem Abstand zum Sollwert. Jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder (104,4 und 108,2\%), während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist, obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Richtigkeit der Ergebnisse sind beide Methoden vergleichbar.
+Beide Wiederfindungsraten sind nahe 100\%, bei ungefähr gleicher Differenz zum Sollwert. Jedoch findet man mit der Kalibriergeraden tendenziell leicht erhöhte Gehalte an HMF wieder (104,4 und 108,2\%), während man in den Proben weniger HMF findet. Es ist auch bemerkenswert wie gut der angegebene Festfaktor zur Gehaltsbestimmung geeignet ist, obwohl bei seiner Verwendung in keinster Weise kalibriert wird und das verwendete Messgerät damit völlig ignoriert wird. Auch bei der Genauigkeit der Ergebnisse sind beide Methoden vergleichbar.
 \subsection{Standardabweichung}
-Da die Probe 3 sechs mal bestimmt wurde, bietet sich an die Standardabweichung zu ermitteln. Mit ihr kann eine Aussage über die Streuung der Messergebnisse getroffen werden. In einem ersten Schritt wird der Mittelwert der Sechsfachbestimmung von Probe 3 bestimmt. Dazu kann der Mittelwert aus dem Abschnitt über die Wiederfindungsrate verwendet werden. Exemplarisch wird die Quantifizierung über den Festfaktor verwendet.\\
+Da die Probe 3 sechs mal bestimmt wurde, wird die Standardabweichung ermittelt. Mit ihr kann eine Aussage über die Streuung der Messergebnisse getroffen werden. In einem ersten Schritt wird der Mittelwert der Sechsfachbestimmung von Probe 3 bestimmt. Dazu kann der Mittelwert aus dem Abschnitt über die Wiederfindungsrate verwendet werden. Exemplarisch wird die Quantifizierung über den Festfaktor verwendet.\\
 Mit den Messwerten kann die Varianz $s^{ 2 }$ ermittelt werden:
 
     \[s^{ 2 }=\frac{ (x_{ 1 }-\bar{x})^{ 2 }+(x_{ 2 }-\bar{x})^{ 2 }+...(x_{ n }-\bar{x})^{ 2 } }{ n-1 }\]
@@ -189,7 +191,7 @@ Die Standardabweichung beträgt 2,72mg/kg. Zur besseren Veranschaulichung kann n
 Die relative Standardabweichung beträgt somit 9,7\%. In Anbetracht des geringen gemessenen Gehaltes ist dies ein akzeptabler Wert.
 
 \section{Standardaddition}
-Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde, bietet sich eine zusätzliche Quantifizierung über Standardaddition an. So lässt sich auch der Einfluss der nach der Abtrennung noch enthaltenen Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe (hier die Mittelwerte der sechs Bestimmungen von Probe 3), sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. Das nachfolgende Diagramm \ref{diag:Standardaddidtion} verdeutlicht die Auswertung.
+Da die Probe 3 zweimal mit unterschiedlichen Mengen an HMF aufgestockt wurde, wird zusätzliche eine Quantifizierung über die Standardaddition durchgeführt. So lässt sich auch der Einfluss der nach der Abtrennung noch enthaltenen Probenmatrix eliminieren. Eine Übereinstimmung mit unseren anderen Ergebnissen würde für einen nur unwesentlichen Einfluss der verbliebenen Matrixanteile sprechen. Der Massenanteil mit mehreren Aufstockungen wird berechnet in dem man die Extinktion der Probe (hier die Mittelwerte der sechs Bestimmungen von Probe 3), sowie die Extinktionen der Aufstockungen zur Erstellung eines Diagramms verwendet. Die Probe ohne Aufstockung markiert den Nullpunkt der X-Achse, jede Aufstockung ist auf der X-Achse gemäß ihrer zugesetzten Konzentration aufgetragen. Das nachfolgende Diagramm \ref{diag:Standardaddidtion} verdeutlicht die Auswertung.
 \begin{diagram}[htbp]
     \centering
         \includegraphics[width=1.00\textwidth]{../Bilder/Standardaddidtion.JPG}
